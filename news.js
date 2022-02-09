@@ -8,6 +8,13 @@ function call(cate) {
         type: 'GET',
         url: `https://newsapi.org/v2/top-headlines?country=kr&apiKey=cded017a336843099d467369774dd0ce${subcate}`,
         dataType: 'json',
+         beforeSend:function (){
+            $('#content').append('<div class="loading">로딩 중...</div>')
+        },
+        complete: function () {
+            $('#content .loading').remove()
+        },
+        timeOut:2000,
         success: function (getdata) {
             console.log(getdata)
             usedata(getdata)
