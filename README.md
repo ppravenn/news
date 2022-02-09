@@ -1,3 +1,3 @@
 # news
 
-https://ppravenn.github.io/news/
+https://ppravenn.github.io/news/news.html
