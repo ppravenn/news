@@ -20,7 +20,7 @@ function call(cate) {
             usedata(getdata)
         },
         error: function (xhr) {
-            console.log(xhr.status + '/' + xhr.errorText)
+            alert(xhr.status + '/' + xhr.errorText)
         }
     })
 }
